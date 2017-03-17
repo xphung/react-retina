@@ -42,7 +42,11 @@ Gallery uses Redux style state management - note how the demo code passes a Redu
 
 ## Running the demo
 
-Open `demo.html` in Chrome or Safari to see the demo.
+1. Download this git as a zip file or clone this git locally to your computer.  CD (change directory) into the root directory of this git (where `package.json` and `webpack.config.js` are located)
+
+2. Open `demo.html` in Chrome to see the demo.
+
+## Creating your own code
 
 To create your own code, install EventEmitter (the only internal runtime dependency) and webpack (the only development dependency) by running:
 
@@ -51,7 +55,7 @@ npm install
 ```
 
 ```
-npm -g webpack
+npm install -g webpack
 ```
 
 Then use webpack to assemble the React-Retina modules with your own code (execute code above with the current directory set to the directory with `webpack.config.js`:
