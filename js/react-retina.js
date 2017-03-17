@@ -2603,14 +2603,13 @@ module.exports = Redux;
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
- *  React_Retina component library, plus small built-in demo
- *
+ *  React-RETINA component library, plus main() function for application code
  **/
 
 var React = __webpack_require__(0)
 var ReactDOM = __webpack_require__(10)
 
-function demo() {
+function main() {
   let SlidesContainer = __webpack_require__(9)
   let reducers = __webpack_require__(7).default
   let store = Redux.createStore(reducers)
@@ -2619,7 +2618,7 @@ function demo() {
 }
 
 module.exports = {
-  demo,
+  main,
   View: __webpack_require__(1),
   Text: __webpack_require__(6),
   Image: __webpack_require__(3),

@@ -1,12 +1,11 @@
 /**
- *  React_Retina component library, plus small built-in demo
- *
+ *  React-RETINA component library, plus main() function for application code
  **/
 
 var React = require('react')
 var ReactDOM = require('react-dom')
 
-function demo() {
+function main() {
   let SlidesContainer = require('./demo/SlidesContainer')
   let reducers = require('./reducers/index').default
   let store = Redux.createStore(reducers)
@@ -15,7 +14,7 @@ function demo() {
 }
 
 module.exports = {
-  demo,
+  main,
   View: require('./components/View'),
   Text: require('./components/Text'),
   Image: require('./components/Image'),

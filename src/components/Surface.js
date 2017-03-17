@@ -28,6 +28,10 @@ var Surface = React.createClass({
       onKeyDown: this.handleKeyDown,
       onKeyUp: this.handleKeyUp,
       onKeyPress: this.handleKeyPress,
+      onTouchBegin: this.handleTouchBegin,
+      onTouchMove: this.handleTouchMove,
+      onTouchEnd: this.handleTouchEnd,
+      onTouchCancel: this.handleTouchCancel,
       onClick: this.handleClick,
       onDoubleClick: this.handleDoubleClick,
       onWheel: this.handleWheel
@@ -70,6 +74,22 @@ var Surface = React.createClass({
 
   handleWheel: function(e) {
     let target = LayerUtils.hitTest(e, this.layer, 'onWheel')
+  },
+
+  handleTouchBegin: function(e) {
+    let target = LayerUtils.hitTest(e, this.layer, 'onTouchBeing')
+  },
+
+  handleTouchMove: function(e) {
+    let target = LayerUtils.hitTest(e, this.layer, 'onTouchMove')
+  },
+
+  handleTouchEnd: function(e) {
+    let target = LayerUtils.hitTest(e, this.layer, 'onTouchEnd')
+  },
+
+  handleTouchCancel: function(e) {
+    let target = LayerUtils.hitTest(e, this.layer, 'onTouchCancel')
   },
 
   handleRef: function(ref) {
