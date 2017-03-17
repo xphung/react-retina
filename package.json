@@ -1,0 +1,9 @@
+{
+  "devDependencies": {},
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "events": "^1.1"
+  }
+}

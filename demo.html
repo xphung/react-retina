@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>React Retina</title>
+  <!-- script src="js/react.js"></script>
+  <script src="js/react-dom.js"></script -->
+  <!-- use the alternative scripts below for Preact instead of React -->
+  <script src="js/preact.js"></script>
+  <script src="js/proptypes0.14.4.js"></script>
+  <script src="js/preact-compat.js"></script>
+  <script>
+  let React = preactCompat
+  let ReactDOM = preactCompat
+  React.PropTypes = PropTypes
+  </script>
+  <script src="js/redux.js"></script>
+  <script src="js/react-retina.js"></script>
+</head>
+<body style="margin:0px; position:absolute; width:100%; height:100%">
+  Drag and drop image files into box below or pick an image directory with file picker.
+  <div id="main" style="position:absolute; width:100%; height:80%;">
+    <p>This element should not be visible if React-Retina is correctly setup</p>
+  </div>
+  <script>
+    Retina.demo()
+  </script>
+</body>
+</html>
